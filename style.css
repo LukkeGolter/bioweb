@@ -43,7 +43,7 @@ header {
 
 @font-face {
     font-family: "NoveraModernBlack";
-    src: url(/fonts/novera-modern-black.otf) format("truetype");
+    src: url(fonts/novera-modern-black.otf) format("truetype");
 }
 
 .container-img2 {
