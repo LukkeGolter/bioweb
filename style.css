@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(11, 11, 11);
+    margin-top: 0%;
+}
+
+header {
+    padding-bottom: 120px;
+
+}
+
+.container-g {
+    margin-top: 50px;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+.container-img1 {
+    display: block;
+    align-items: center;
+    column-gap: 1px;
+    
+}
+
+.image1 {
+    max-width: 27%;
+    max-height: 27%;
+    float: right;
+    border-radius: 25px;
+}
+
+.text1 {
+    font-size: 25px; ;
+    font-family: NoveraModernBlack;
+    color: white;
+}
+
+.text2 {
+    line-height: 2em;
+    font-size: 15px;
+    font-family: NoveraModernBlack;
+    color: rgba(255, 254, 254, 0.637);
+}
+
+@font-face {
+    font-family: "NoveraModernBlack";
+    src: url(/fonts/novera-modern-black.otf) format("truetype");
+}
+
+.container-img2 {
+    display: block;
+    align-items: center;   
+}
+
+.image2 {
+    max-width: 3%;
+    max-height: 3%;
+    float: left;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: background-color 1s ease-out 90ms
+}
+.image2:hover {
+    background-color: #ffffff;
+}
