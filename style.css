@@ -32,7 +32,22 @@ header {
     font-size: 25px; ;
     font-family: NoveraModernBlack;
     color: white;
+    text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+    letter-spacing: 0.125em;
+    animation-duration: 0.01s;
+       animation-name: textflicker;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
 }
+
+@keyframes textflicker {
+    from {
+      text-shadow: 2px 0 0 #ea36af, -3px 0 0 #75fa69;
+    }
+    to {
+      text-shadow: 3px 0.1px 2px #ea36af, -2px -0.1px 3px #75fa69;
+    }
+  }
 
 .text2 {
     line-height: 2em;
@@ -57,8 +72,12 @@ header {
     float: left;
     border-radius: 5px;
     margin-right: 20px;
-    transition: background-color 1s ease-out 90ms
+    transition: transform .7s ease-in-out;
 }
+
 .image2:hover {
-    background-color: #ffffff;
+    transform: rotate(200deg);
 }
+
+
+
