@@ -4,9 +4,40 @@ body {
 }
 
 header {
-    padding-bottom: 120px;
-
+    padding-bottom: 80px;
+    margin-top: 40px;
 }
+
+.line-1{
+    position: relative;
+    top: 10%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 3px solid rgba(255, 255, 255, 0.75);
+    font-size: 25px; 
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+
+    transform: translateY(-50%);   
+    color: rgba(255, 255, 255, 0.252);
+    font-family: NoveraModernBlack;
+    text-shadow: 0.06rem 0 0.06rem #8a8a8a, -0.125rem 0 0.06rem #3c3c3c;
+}
+
+.anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 0.7s steps(44) infinite normal;
+}
+
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 36em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255, 255, 255, 0.75);}
+    to{border-right-color: transparent;}
+  }
 
 .container-g {
     margin-top: 50px;
@@ -32,7 +63,7 @@ header {
     font-size: 25px; ;
     font-family: NoveraModernBlack;
     color: white;
-    text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+    text-shadow: 0.06rem 0 0.06rem #939393, -0.125rem 0 0.06rem #4e4e4e;
     letter-spacing: 0.125em;
     animation-duration: 0.01s;
        animation-name: textflicker;
@@ -42,10 +73,10 @@ header {
 
 @keyframes textflicker {
     from {
-      text-shadow: 2px 0 0 #ea36af, -3px 0 0 #75fa69;
+      text-shadow: 2px 0 0 #939393, -3px 0 0 #4e4e4e;
     }
     to {
-      text-shadow: 3px 0.1px 2px #ea36af, -2px -0.1px 3px #75fa69;
+      text-shadow: 4px 0.1px 2px #939393, -2px -0.1px 3px #4e4e4e;
     }
   }
 
@@ -77,6 +108,19 @@ header {
 
 .image2:hover {
     transform: rotate(200deg);
+}
+
+
+
+.my-float{
+	position:fixed;
+	max-width:50px;
+	max-height:50px;
+	top:40px;
+	left:40px;
+	border-radius:15px;
+	text-align:center;
+	box-shadow: 2px 2px 3px rgb(172, 172, 172);
 }
 
 
