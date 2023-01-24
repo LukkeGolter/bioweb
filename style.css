@@ -110,18 +110,23 @@ header {
     transform: rotate(200deg);
 }
 
-
-
 .my-float{
-	position:fixed;
+	position:sticky;
 	max-width:50px;
 	max-height:50px;
 	top:40px;
 	left:40px;
 	border-radius:15px;
 	text-align:center;
+    transition: transform 1.5s ease-in-out;
 
 }
 
+.my-float:hover {
+    transform: rotate(720deg);
+}
 
+::selection {
+    background: rgba(54, 54, 54, 0.474);
+  }
 
