@@ -32,7 +32,7 @@ header {
 
 @keyframes typewriter{
     from{width: 0;}
-    to{width: 36em;}
+    to{width: 28em;}
   }
   @keyframes blinkTextCursor{
     from{border-right-color: rgba(255, 255, 255, 0.75);}
@@ -130,3 +130,13 @@ header {
     background: rgba(54, 54, 54, 0.474);
   }
 
+footer {
+    padding-bottom: 37rem;
+    margin-top:180px;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+.container-f {
+ color: white;
+}
