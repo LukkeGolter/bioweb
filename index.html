@@ -12,7 +12,7 @@
 <header>
     <!-- refresh button top --> 
     <a href="">
-        <img class="my-float" src="images/refresh.png">
+        <img class="my-float" src="images/refresh.png" value="PLAY" onfocus="">
         </a>
     <!-- header typing text -->
     <p class="line-1 anim-typewriter">
@@ -52,7 +52,9 @@
 
             <a href="https://steamcommunity.com/id/LUKKEGOLTER/"><img class="image2" src="images/steam.png"></a>
 
-            <audio src="audio/audio3.mp3" controls autoplay></audio>
+            <audio preload="auto" loop autoplay>
+                <source src="audio/audio3.mp3">
+            </audio>
 
     </div>
 </div>
