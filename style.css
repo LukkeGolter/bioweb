@@ -143,3 +143,12 @@ footer {
 .container-f {
  color: white;
 }
+
+html {
+    scroll-snap-type: y mandatory;
+  }
+
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
