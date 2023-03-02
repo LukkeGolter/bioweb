@@ -142,12 +142,26 @@ footer {
 }
 
 .container-f {
- color: white;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: #3c3c3c;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(40, 40, 40); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(40, 40, 40); 
+    border-radius: 5px;
 }
 
 html {
     scroll-snap-type: y mandatory;
-  }
+}
 
 section {
     scroll-snap-align: start;
