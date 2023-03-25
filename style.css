@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(180deg, rgb(16, 16, 16) 50%,rgb(160, 160, 160) 20%);
+    background-image: linear-gradient(180deg, rgb(16, 16, 16) 50%,rgb(160, 160, 160) 20%, rgb(65, 65, 65));
     background-repeat: no-repeat;
     margin-top: 0%;
 }
@@ -35,6 +35,7 @@ header {
     from{width: 0;}
     to{width: 28em;}
   }
+
   @keyframes blinkTextCursor{
     from{border-right-color: rgba(255, 255, 255, 0.75);}
     to{border-right-color: transparent;}
@@ -59,22 +60,40 @@ header {
     font-size: 25px; ;
     font-family: NoveraModernBlack;
     color: white;
-    text-shadow: 0.06rem 0 0.06rem #939393, -0.125rem 0 0.06rem #4e4e4e;
+    text-shadow: 0.08rem 0 0.08rem #939393, -0.125rem 0 0.08rem #666666;
     letter-spacing: 0.125em;
-    animation-duration: 0.01s;
+    animation-duration: 0.02s;
        animation-name: textflicker;
        animation-iteration-count: infinite;
        animation-direction: alternate;
 }
+
+.blink{
+    animation:blinkingText 2s alternate;
+}
+
+@keyframes blinkingText{
+    10%{    color: #6a6a6a; }
+    20%{    color: #b8b8b8; }
+    30%{    color: #cfcfcf8f;}
+    40%{    color: #858585; }
+    50%{    color: #949494; }
+    55%{    color: #949494; }
+    60%{    color: #888888; }
+    99%{    color: #dadada; }
+    100%{   color: #dcdcdc; }
+}
+
 
 @keyframes textflicker {
     from {
       text-shadow: 2px 0 0 #939393, -3px 0 0 #4e4e4e;
     }
     to {
-      text-shadow: 4px 0.4px 6px #939393, -2px -0.4px 9px #4e4e4e;
+      text-shadow: 7px 0.4px 6px #939393, -2px -0.4px 9px #4e4e4e;
     }
   }
+
 
 .text2 {
     line-height: 2em;
@@ -103,8 +122,21 @@ header {
     transition: transform .7s ease-in-out;
 }
 
+.image2-1 {
+    max-width: 3%;
+    max-height: 3%;
+    float: left;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: transform .7s ease-in-out;
+}
+
 .image2:hover {
     transform: rotate(200deg);
+}
+
+.image2-1:hover {
+    transform: rotate(-200deg);
 }
 
 .my-float{
@@ -124,15 +156,22 @@ header {
     transform: rotate(720deg);
 }
 
-::selection {
-    background: rgba(54, 54, 54, 0.474);
-}
-
-
 footer {
     margin-left: 160px;
     margin-right: 160px;
     padding-bottom: 22rem;
+}
+
+.texth1 {
+    font-size: 25px; ;
+    font-family: NoveraModernBlack;
+    color: rgba(0, 0, 0, 0.637);
+    text-shadow: 0.08rem 0 0.08rem #939393, -0.125rem 0 0.08rem #666666;
+    letter-spacing: 0.125em;
+    animation-duration: 0.02s;
+       animation-name: textflicker;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
 }
 
 ::-webkit-scrollbar {
@@ -150,7 +189,7 @@ footer {
 }
 
 .text3 {
-    padding-top: 150px;
+    padding-top: 140px;
     line-height: 2em;
     font-size: 15px;
     font-family: NoveraModernBlack;
@@ -167,7 +206,8 @@ footer {
     max-height: 27%;
     float: right;
     border-radius: 20px;
-    margin-top: 170px;
+    margin-top: 180px;
+    box-shadow:19px 19px 6px rgb(45, 45, 45);
 }
 
 html {
@@ -177,4 +217,15 @@ html {
 section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
+}
+
+::selection{
+
+    color: rgb(255, 255, 255);
+    background: rgb(73, 73, 73);
+
+}
+
+.audio{
+    display: none;
 }
