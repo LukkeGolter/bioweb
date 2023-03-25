@@ -74,13 +74,32 @@ header {
 
 @keyframes blinkingText{
     10%{    color: #6a6a6a; }
-    20%{    color: #b8b8b8; }
+    12%{    color: rgb(217, 216, 216); }
+    13%{    color: #434343; }
+    14%{    color: #bcbcbc; }
+    15%{    color: #6a6a6a; }
+    20%{    color: #ffffff; }
+    22%{    color: #373737; }
+    23%{    color: #f9f9f9; }
+    24%{    color: #484848; }
+    25%{    color: #ffffff; }
     30%{    color: #cfcfcf8f;}
-    40%{    color: #858585; }
-    50%{    color: #949494; }
-    55%{    color: #949494; }
-    60%{    color: #888888; }
-    99%{    color: #dadada; }
+    40%{    color: #cecece; }
+    50%{    color: #585858; }
+    56%{    color: #cdcdcd; }
+    57%{    color: #6d6d6d; }
+    59%{    color: #cfcfcf; }
+    60%{    color: #747474; }
+    61%{    color: #ffffff; }
+    62%{    color: #393939; }
+    63%{    color: #bababa; }
+    65%{    color: #232323; }
+    68%{    color: #c2c2c2; }
+    71%{    color: #383838; }
+    75%{    color: #bdbdbd; }
+    76%{    color: #3a3a3a; }
+    77%{    color: #747474; }
+    99%{    color: #bababa; }
     100%{   color: #dcdcdc; }
 }
 
