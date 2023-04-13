@@ -1,5 +1,4 @@
-body
-{
+body{
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 0%;
@@ -11,4 +10,8 @@ video{
     min-width: 100%; 
     min-height: 100%;
     zoom: 1%;
+}
+
+audio{
+    display: none;
 }
