@@ -170,6 +170,17 @@ header {
 
 }
 
+.my-float2{
+	position:fixed;
+	max-width:50px;
+	max-height:50px;
+	top:635px;
+	right:45px;
+	border-radius:25px;
+	text-align:center;
+    transition: transform 1s ease-in-out;
+    background-color: #dcdcdc;
+}
 
 .my-float:hover {
     transform: rotate(720deg);
@@ -243,8 +254,4 @@ section {
     color: rgb(255, 255, 255);
     background: rgb(73, 73, 73);
 
-}
-
-.audio{
-    display: none;
 }
