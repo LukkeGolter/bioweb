@@ -240,6 +240,16 @@ footer {
     box-shadow:19px 19px 6px rgb(45, 45, 45);
 }
 
+.planets{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.637);
+}
+
+.planets::selection{
+    color: rgb(0, 0, 0);
+    background: rgb(73, 73, 73);
+}
+
 html {
     scroll-snap-type: y mandatory;
 }
