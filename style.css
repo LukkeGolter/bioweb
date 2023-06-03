@@ -5,8 +5,7 @@ body {
 }
 
 header {
-    padding-bottom: 80px;
-    margin-top: 40px;
+ padding: 40px 0;
 }
 
 .line-1{
@@ -262,4 +261,33 @@ section {
 ::selection{
     color: rgb(255, 255, 255);
     background: rgb(73, 73, 73);
+}
+
+@media (min-width: 600px) {
+
+    html{
+        zoom: 100%;
+        text-size-adjust: 100%;
+    }
+
+    img{
+        zoom: 100%;
+    }
+    
+    section{
+        text-align: left;
+    }
+
+    .container-g {
+        margin-top: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 33rem;
+    }
+
+    footer {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 12.9rem;
+    }
 }
